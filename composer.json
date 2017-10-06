@@ -1,0 +1,20 @@
+{
+    "name": "lyssal/twig",
+    "description": "Extensions for Twig.",
+	"license" : "proprietary",
+    "keywords": ["twig"],
+    "type": "library",
+    "authors": [
+        {
+            "name": "Rémi Leclerc",
+            "homepage": "http://www.lyssal.com/"
+        }
+    ],
+    "require": {
+        "twig/twig": "~1.20 ~2.0",
+        "lyssal/lib-php": "~0.2"
+    },
+    "autoload":     {
+        "psr-0": { "Lyssal\\Twig": "src" }
+    }
+}
