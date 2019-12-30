@@ -11,7 +11,7 @@
         }
     ],
     "require": {
-        "twig/twig": "~1.20|~2.0",
+        "twig/twig": "~2|~3",
         "lyssal/lib-php": "~0.2"
     },
     "autoload": {

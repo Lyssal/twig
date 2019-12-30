@@ -8,13 +8,13 @@
 namespace Lyssal\Twig\Extension;
 
 use Lyssal\Text\Html;
-use Twig_Extension;
-use Twig_SimpleFilter;
+use Twig\Extension\AbstractExtension;
+use Twig\TwigFilter;
 
 /**
  * The Twig filters for rendering.
  */
-class RenderingExtension extends Twig_Extension
+class RenderingExtension extends AbstractExtension
 {
     /**
      * {@inheritDoc}
@@ -22,7 +22,7 @@ class RenderingExtension extends Twig_Extension
     public function getFilters()
     {
         return array(
-            new Twig_SimpleFilter('raw_secure', array($this, 'rawSecure'), array('is_safe' => array('html', 'css')))
+            new TwigFilter('raw_secure', [$this, 'rawSecure'], ['is_safe' => ['html', 'css']])
         );
     }
 
